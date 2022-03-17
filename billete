@@ -1,0 +1,12 @@
+package model;
+
+
+
+public class Billete
+{
+
+	public Billete(int valor, int cantidad) 
+	
+	
+
+}
