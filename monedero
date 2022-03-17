@@ -14,11 +14,13 @@ public class Monedero {
 	public int[] calcularBilletes(int dineroPedido) {
 		Scanner in= new Scanner(System.in);
 		int[] billetesAEntregar={0,0,0,0,0,0,0};
-		do {
+		
+		while(dineroPedido%5!=0) {
+		
 			System.out.println("Esta cantidad no es posible de retirar.");
 			dineroPedido=in.nextInt();
 		}
-		while(dineroPedido%5!=0);
+		
 		
 		for(int i=0; i<20;i++) {
 			if((dineroPedido/500<=1)&&(b500.cantidad>=1)) {
@@ -58,6 +60,7 @@ public class Monedero {
 				b5.cantidad=(b5.cantidad)-1;
 			
 			}
+			
 			
 			}
 		
